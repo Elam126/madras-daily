@@ -134,6 +134,8 @@ return [
     |
     */
 
+    'paths' => ['api/*'],
+
     'providers' => [
 
         /*
