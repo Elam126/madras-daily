@@ -90,6 +90,8 @@ class newsController extends Controller
         ]);
     }
 
+    
+
     public function destroy($news_id)
     {
         news::destroy($news_id);

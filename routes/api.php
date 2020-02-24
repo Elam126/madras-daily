@@ -24,3 +24,4 @@ Route::resource('news', 'newsController');
 Route::group(['middleware' => 'api', 'prefix' => 'api'], function(){
 	Route::resource('news', 'newsController');
 });*/
+
