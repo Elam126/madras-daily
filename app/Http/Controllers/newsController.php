@@ -35,7 +35,9 @@ class newsController extends Controller
     }
 
     private function transformCollection($newsapp){
-       return array_map([$this, 'transform'], $newsapp->toArray());
+       $news_sort= array_map([$this, 'transform'], $newsapp->toArray());
+     //Sorting the array from Backwards(Last In First Out)
+        return array_reverse($news_sort);
     }
     
     private function transform($newsapp){
