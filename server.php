@@ -1,6 +1,6 @@
 <?php 
 
-header("access-control-allow-origin: *");
+header('access-control-allow-origin: *');
 
 /**
  * Laravel - A PHP Framework For Web Artisans
