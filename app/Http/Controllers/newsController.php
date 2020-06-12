@@ -47,7 +47,8 @@ class newsController extends Controller
                'news_type' => $newsapp['catagory'],
                'news_pics' => $newsapp['news_image'],
                'news_content' => $newsapp['body'],
-               'last_updated' => $newsapp['updated_at']
+               'last_updated' => $newsapp['updated_at'],
+               'cartoon_img' => $newsapp['cartoon']
             ];
     }
 
@@ -86,6 +87,7 @@ class newsController extends Controller
         $newsapp->news_pis = $request->news_image;
         $newsapp->news_content =$request->news_content;
         $newsapp->last_updated = $request->last_updated;
+        $newsapp->cartoon_img = $request->cartoon_img;
 
 
         //$newsapp->user_id = $request->user_id;
