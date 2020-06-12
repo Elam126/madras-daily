@@ -48,7 +48,7 @@ class newsController extends Controller
                'news_pics' => $newsapp['news_image'],
                'news_content' => $newsapp['body'],
                'last_updated' => $newsapp['updated_at'],
-               'cartoon_img' => $newsapp['cartoon']
+               'cartoon' => $newsapp['cartoon']
             ];
     }
 
